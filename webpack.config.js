@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './app',
+  entry: './app/app.js',
   output: {
     path: '/build',
     filename: 'bundle.js'
@@ -7,13 +7,15 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/
       }
     ]
   },
   devServer: {
     port: 3000,
     contentBase: './build',
-    inline: false
+    inline: true
   }
 };

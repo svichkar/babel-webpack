@@ -6,14 +6,12 @@ import $ from 'jquery';
 
 export function log (content) {
 
-  alert(content);
-  $('<h4 class="bg-info">').text(content).appendTo($('#content'));
+ // $('<h4 class="bg-info">').text(content).appendTo($('#content'));
 }
 
 export function logTitle (content) {
 
-  alert(content);
-  $('#content').add('<h1 class="bg-primary">' + content +'</h1>');
-}
+  console.log($);
 
-export default $;
+  $('._content').append('<h1 class="bg-primary">' + content +'</h1>');
+}
