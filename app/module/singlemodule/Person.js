@@ -4,6 +4,6 @@
 export default class Person {
 
   toString() {
-    console.log("it's object")
+    return "it's object";
   }
 }
